@@ -3,37 +3,62 @@
     <head>
         <title>Lab 7</title>
         <meta charset="utf-8">
-
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,300i,400,400i,500,700&display=swap" rel="stylesheet">
+        <style>
+        
+        </style>
     </head>
     <body>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
-                var bodyStyles = {"margin": 0, "padding": 0, "min-height": "100vh"};
+                var bodyStyles = {"margin": 0, "padding": 0, "min-height": "100vh", "font-family": "Roboto Condensed', sans-serif"};
                 $("body").css(bodyStyles);
                 var main = $("<main>");
                 var mainStyles = {"display": "grid", "grid-template-rows": "30vh 70vh"};
                 main.css(mainStyles);
+                
                 // Header
                 var header = $("<header>");
                 header.css({"background-image": "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(\"background.jpg\")", "background-size": "100% 100%"});
+                // top nav
                 var ul = $("<ul>");
                 ul.css({"display": "flex","justify-content": "space-between", "list-style": "none", "font-size": "50px"});
-                ul.addClass("mainNav");
-                var li1 = $("<li>").append("<a href=\"#\">Logo</a>");
+                var burgerMenu = $("<div>").addClass("container");
+                burgerMenu.css({"display": "inline-block", "cursor": "pointer"});
+                var burgerBar1 = $("<div>").addClass("bar1");
+                var burgerBar2 = $("<div>").addClass("bar2");
+                var burgerBar3 = $("<div>").addClass("bar3");
+                burgerBar1.css({"width": "35px", "height": "5px", "background-color": "white", "margin": "6px 0"});
+                burgerBar2.css({"width": "35px", "height": "5px", "background-color": "white", "margin": "6px 0"});
+                burgerBar3.css({"width": "35px", "height": "5px", "background-color": "white", "margin": "6px 0"});
+                burgerMenu.append(burgerBar1, burgerBar2, burgerBar3);
+                var li1 = $("<li>").append(burgerMenu);
                 var li2 = $("<li>").append("<a href=\"#\">Top Gyms</a>");
-                var li3 = $("<li>").append("<a href=\"#\"><img src=\"menu.png\" alt=\"menu icon\"</a>");
+                var li3 = $("<li>").append("<a href=\"#\">Logo</a>");
                 ul.append(li1, li2, li3);
+
+                //Hamburger Nav
+                
+
                 //Name of gyms section
                 var title = $("<div>");
                 title.css({"display": "flex", "flex-direction": "column", "align-items": "center", "align-content": "center"});
                 var name = $("<h1>Silver's Gym Club</h1>");
                 name.css({"color": "white"})
-                name.css({"font-size": "60px"})
-                var location = $("<p><i class=\"fa fa-map-marker\"></i>New York, NY</p>");
+                name.css({"font-size": "7.5vw"})
+                var locationDiv = $("<div>");
+                locationDiv.css({"display": "flex", "justify-content": "space-evenly", "align-items": "center"})
+                var locIcon = $("<i class=\"material-icons\">my_location</i>");
+                locIcon.css({"display": "block", "color": "white", "font-size": "4.5vw", "margin-right": "5px"})
+                var location = $("<p>New York, NY</p>");
+                locationDiv.append(locIcon, location);
                 location.css({"color": "white"})
-                location.css({"font-size": "30px"})
-                title.append(name, location);
+                location.css({"font-size": "4.5vw"})
+                title.append(name, locationDiv);
                 header.append(ul, title);
 
                 //body
@@ -58,7 +83,7 @@
                 li8.css({"margin-left": "auto"});
                 ul3.append(li6, li7, li8);
                 img1.attr('src', 'pic1.jpg');
-                img1.css({"width": "50px", "border-radius": "50%"});
+                img1.css({"width": "50px", "border-radius": "100%"});
                 content1.append("<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>");
                 content1.append("<p>Questions about whether design is\nnecessary or affordable are quite besides\nthis point: design is inevitable.");
                 content1.append(ul3);
@@ -66,7 +91,7 @@
                 
                 // ("#profile1").css({"width": "50px"});
 
-                
+                //Second review
                 var content2 = $('<div>');
                 content2.css({"border": "1px solid black", "padding": "20px"})
                 var img2 = $("<img>");
@@ -89,6 +114,7 @@
                 section.append(ul2, reviews);
                 main.append(header, section);
                 $("body").append(main);
+                $("a").css({"text-decoration": "none", "color": "white"});
             });
 
         </script>
