@@ -9,38 +9,58 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
+                var bodyStyles = {"margin": 0, "padding": 0};
+                $("body").css(bodyStyles);
+                var main = $("<main>");
+                var mainStyles = {"display": "grid"};
+                main.css(mainStyles);
                 // Header
                 var header = $("<header>");
                 var ul = $("<ul>");
+                ul.css("list-style", "none");
                 ul.addClass("mainNav");
-                var li1 = $("<li>").append("<p>Logo</>");
-                var li2 = $("<li>").append("<p>Top Gyms</p>");
-                var li3 = $("<li>").append("<p>Three Dots</p>");
+                var li1 = $("<li>").append("<a href=\"#\">Logo</a>");
+                var li2 = $("<li>").append("<a href=\"#\">Top Gyms</a>");
+                var li3 = $("<li>").append("<a href=\"#\"><img src=\"menu.png\" alt=\"menu icon\"</a>");
                 ul.append(li1, li2, li3);
-                header.append(ul);
+
+                var title = $("<div>");
+                var name = $("<h1>Silver's Gym Club</h1>");
+                var location = $("<p><i class=\"fa fa-map-marker\"></i>New York, NY</p>");
+                title.append(name, location);
+                header.append(ul, title);
+
+                
                 
 
                 //body
-                var main = $('<main>');
-                var section = $('<nav>');
+                var section = $('<section>');
                 var content = $("<div>");
                 
-                var ul2 = $('<ul>').addClass("bodyNav");
-                var li4 = $('<li>').append("<p>Facilities</p>");
-                var li5 = $('<li>').append("<p>Reviews</p>");
+                var ul2 = $('<ul>');
+                ul2.css("list-style", "none");
 
-                var reviews = $('<div>').addClass("reviews");
-                var content1 = $('<div>')
-                var content2 = $('<div>')
-                
-
-        
-
-
+                var li4 = $('<li>Facilities</li>');
+                var li5 = $('<li>Review</li>');
 
                 ul2.append(li4, li5);
-                main.append(section.append(ul2), reviews.append(content1, content2));
-                $("body").append(header, main);
+
+                var reviews = $('<div>');
+                var content1 = $('<div>');
+                content1.append("<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>");
+                content1.append("<p>Questions about whether design is\nnecessary or affordable are quite besides\nthis point: design is inevitable.");
+                content1.append("<img src=\"img_avatar.png\" alt=\"Avatar\">");
+
+                
+                var content2 = $('<div>');
+                content2.append("<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>");
+                content2.append("<p>Design is the application of intent - the opposite of happenstance and an antidote to accident.");
+                reviews.append(content1, content2);
+
+
+                section.append(ul2, reviews);
+                main.append(header, section);
+                $("body").append(main);
             });
 
         </script>
