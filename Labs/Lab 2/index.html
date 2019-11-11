@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 2</title>
+        <meta charset="utf-8"/>
+        <style type="text/css">
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #wrapper {
+                background-color: orange;
+                display: grid;
+                height: 100vh;
+                grid-template-columns: 25vw 25vw 25vw 25vw;
+                grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+                grid-template-areas: 
+                "header header header header"
+                "main main main main"
+                "main main main main"
+                "main main main main"
+                "footer footer footer footer";
+            }
+
+            #img {
+                background-image: url(https://dummyimage.com/320x250/000/fff);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            a:hover {
+                font-size: 50px;;
+            }
+
+            a[href="#"] {
+                color: green;
+            }
+
+
+            span {
+                color:yellow;
+            }
+
+            abbr {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .main-header{ 
+                text-align: center;
+                background-color: red;
+                grid-area: header;
+                justify-content: center;
+                grid-column: 2 / span 2;;
+                
+            }
+            #content {
+                background-color: azure; 
+                grid-area: main;
+                grid-column: 2 / span 2;
+            }
+
+            .list-grid {
+                display: grid;
+                grid-template-columns: 25vw 25vw;
+                grid-template-rows: 20vh 20vh 20vh;
+            }
+
+            .list li {
+                list-style: none;
+            }
+
+            ul li:nth-child(2n+1) {
+                background-color: blueviolet;
+            }
+
+            ol li:nth-child(2) {
+                background-color: blueviolet;
+            }
+
+            tr:nth-child(2n + 1) {
+                background-color: aqua;
+            }
+
+            .footer { 
+                grid-area: footer;
+                grid-column: 2 / span 2;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header class="main-header">
+                <h1>COMP 1930 Outline</h1>
+            </header>
+
+            <div id="content">
+                <div class="list-grid">
+                    <div>
+                        <h2>Todos</h2>
+                        <ul class="list">
+                                <li><a href="#">Research Competition </a></li>
+                                <li><a href="#">Plan Layour</a></li>
+                                <li><a href="#">Task Flow for Objects</a></li>
+                            </ul>
+                            <ol class="list">
+                                <li><a href="#">Prepare Pitch</a></li>
+                                <li><a href="#">Finish Slides</a></li>
+                                <li><a href="#">Content</a></li>
+                            </ol>
+                    </div>
+                    <div id="img"></div>
+                    <!-- <img class="logo" src="https://dummyimage.com/320x250/000/fff" alt="Dummy image"> -->
+                    <fieldset>
+                        <legend>Potential Companies</legend>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Websites</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Walmart</td>
+                                    <td>Walmart.ca</td>
+                                </tr>
+                                <tr>
+                                    <td>Amazon</td>
+                                    <td>Amazon.ca</td>
+                                </tr>
+                                <tr>
+                                    <td>Bestbuy</td>
+                                    <td>Bestbuy.ca</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <div>
+                        <h2>Comp 1930 Summary</h2>
+                        <p>
+                            Currently, we <b>plan</b> to <i>create</i> a website for 
+                            shopping using <abbr>CSS</abbr>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2019 Andrew Takahashi</p>
+            </footer>
+        </div>
+    </body>
+</html>

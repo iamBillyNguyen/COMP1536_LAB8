@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 5</title>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Tinos:400,700&display=swap" rel="stylesheet">
+        <style>
+            @font-face {
+                font-family: "Old Newspaper Types";
+                src: url("oldnewspapertypes.ttf") format('truetype');
+            }
+            @font-face {
+                font-family: "AlegreyaSC-Bold";
+                src: url("AlegreyaSC-Bold.otf") format('opentype');
+            }
+        </style>
+    </head>
+    <script>
+        function dNd() {
+            // Main Sections
+
+            document.body = document.createElement("body");
+            document.body.style.background = "rgb(238, 223, 180)";
+            document.body.style.margin = "0";
+            document.body.style.padding = "0";
+            document.body.style.display = "grid";
+            document.body.style.minHeight = "100%";
+            document.body.style.fontFamily = "Tinos, serif"
+            document.documentElement.style.height = "100%";
+            document.body.style.gridTemplateRows = "0.25fr 2fr 0.04fr";
+            
+            
+
+            //Header Html
+            var header = document.createElement("header");
+            var textContainer = document.createElement("div");
+            header.style.display = "flex";
+            header.style.justifyContent = "space-around";
+            header.style.alignItems = "center";
+            header.style.alignContent = "center";
+            header.style.backgroundImage = "linear-gradient(175deg, rgb(14, 90, 146) 0%, rgb(9, 68, 113) 100%)";
+            header.style.borderBottom = "10px solid rgb(110, 120, 126)";
+            var leftImg = document.createElement("img");
+            leftImg.setAttribute("src", "Symbol-of-Bhaal.jpg");
+            leftImg.setAttribute("id", "icon");
+            leftImg.style.width = "100px";
+            leftImg.style.height = "100px";
+            leftImg.style.objectFit = "contain";
+            leftImg.style.borderRadius = "50%";
+
+            textContainer.appendChild(leftImg);
+            textContainer.style.display = "flex";
+            textContainer.style.flexDirection = "column";
+            var headerText = document.createElement("p");
+            var imgText = document.createElement("p");
+            imgText.innerHTML = "CE";
+            imgText.style.textAlign = "center";
+            imgText.style.fontSize = "19px";
+
+
+            imgText.style.color = "white";
+            imgText.style.padding = "0";
+            imgText.style.textShadow = "1px 2px 2px black";
+            imgText.style.fontFamily = "Old Newspaper Types, serif";
+            textContainer.appendChild(imgText);
+            var rightImg = document.createElement("p");
+            rightImg.style.width = "150px";
+            rightImg.style.height = "150px";
+            rightImg.style.paddingTop = "15px";
+            rightImg.innerHTML = "EPIC<br> 249<br> Points";
+            rightImg.style.backgroundColor = "#ff4e00";
+            rightImg.style.backgroundImage = "linear-gradient(to right bottom, #e49529, #e78f26, #eb8824, #ee8123, #f17923);";
+            rightImg.style.borderRadius = "50%";
+            rightImg.style.textAlign = "center";
+            rightImg.style.textShadow = "1px 2px 2px yellow";
+            rightImg.style.verticalAlign = "middle";
+            rightImg.style.fontSize = "28px";
+            rightImg.style.boxShadow = '0 10px 10px black';
+            rightImg.style.fontFamily = "Old Newspaper Types, serif";
+            header.appendChild(textContainer);
+            headerText.innerHTML = "Aspect of <br>Demogoran";
+            headerText.style.fontSize = "35px";
+            headerText.style.color = "white";
+            headerText.style.textShadow = '2px 4px 0 black'
+            headerText.style.fontFamily = "Old Newspaper Types, serif";
+            header.appendChild(headerText);
+            header.appendChild(rightImg);
+            document.body.appendChild(header);
+
+            //Content 
+            var content = document.createElement("section");
+            var ul = document.createElement("ul");
+            ul.style.display = "flex";
+            ul.style.flexDirection = "column";
+            ul.style.justifyContent = "space-between";
+            ul.style.listStyle = "none";
+            ul.style.alignItems = "center";
+
+            var article = document.createElement("article");
+            article.style.display = "flex";
+
+            var text = document.createElement("div");
+            text.style.maxWidth = "500px"
+            content.style.display = "grid";
+            content.style.gridTemplateColumns = "1fr 1fr"
+
+            var li1 = document.createElement("li");
+            li1.innerHTML = "Level<br>(Save)<br>13";
+            li1.style.backgroundImage = "linear-gradient(175deg, rgb(14, 90, 146) 0%, rgb(9, 68, 113) 100%)";
+            li1.style.width = "100px";
+            li1.style.height = "100px";
+            li1.style.textAlign = "center";
+            li1.style.color = "white";
+            li1.style.textShadow = '2px 4px 0 black';
+            li1.style.boxShadow = '0 0 10px black';
+            var li2 = document.createElement("li");
+            li2.innerHTML = "Speed<br>7";
+            li2.style.backgroundImage = "linear-gradient(175deg, rgb(14, 90, 146) 0%, rgb(9, 68, 113) 100%)";
+            li2.style.width = "100px";
+            li2.style.height = "100px";
+            li2.style.textAlign = "center";
+            li2.style.color = "white";
+            li2.style.textShadow = '2px 4px 0 black';
+            li2.style.boxShadow = '0 0 10px black';
+            var li3 = document.createElement("li");
+            li3.innerHTML = "AC<br>25";
+            li3.style.backgroundImage = "linear-gradient(175deg, rgb(14, 90, 146) 0%, rgb(9, 68, 113) 100%)";
+            li3.style.width = "100px";
+            li3.style.height = "100px";
+            li3.style.textAlign = "center";
+            li3.style.color = "white";
+            li3.style.textShadow = '2px 4px 0 black';
+            li3.style.boxShadow = '0 0 10px black';
+            var li4 = document.createElement("li");
+            li4.innerHTML = "HP<br>200";
+            li4.style.backgroundImage = "linear-gradient(175deg, rgb(14, 90, 146) 0%, rgb(9, 68, 113) 100%)";
+            li4.style.width = "100px";
+            li4.style.height = "100px";
+            li4.style.textAlign = "center";
+            li4.style.color = "white";
+            li4.style.textShadow = '2px 4px 0 black';
+            li4.style.boxShadow = '0 0 10px black';
+            var info1 = document.createElement("p");
+            info1.innerHTML = "Melee Attack<br>+21/+21<br>(20 magic+Rot/20 Magic)"
+
+            var info2 = document.createElement("p");
+            info2.innerHTML = "<b>Type:</b> Large Outsider";
+            var info3 = document.createElement("p");
+            info3.innerHTML = "<b>Special Abilities</b><br><b>Blindsight;</b> <b>DR 5;</b><br><b>Rot</b>(Living creatures take <b>10</b> damage whenever it " 
+                + " activates until the end of the skirmish or<br> until it is healed; DC <b>19);</b> <b>Immune</b><br><b>Electricity, Poison; Resist 10 Acid, Cold,<br></b>"
+                + " <b>Fire; Melee Reach 2; Dual Activation</b>This<br>creature can two turns each round;<br>each turn coutjns as one of your activations<br>"
+                + " in that phase); <b>Initiative Booster +2</b>(<b>+2</b> to<br> you initative checks); <b>Gaze Attack &#9633 &#9633</b><br>(Replaces attacks:"
+                + " sight; Paralysis; DC <b>19</b>"; 
+            var demo = document.createElement("img");
+            demo.setAttribute("src", "Demogorgon.png");
+            demo.style.width = "300px";
+            demo.style.height = "300px";
+            demo.style.alignSelf = "flex-start"
+            text.appendChild(info1);
+            text.appendChild(info2);
+            text.appendChild(info3);
+            text.appendChild(demo);
+            article.appendChild(text);
+            article.appendChild(demo);
+            
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            ul.appendChild(li3);
+            ul.appendChild(li4);
+            content.appendChild(ul);
+            content.appendChild(article);
+        
+            content.style.fontSize = "30px";
+            document.body.appendChild(content);
+
+            
+            //Footer
+            var footer = document.createElement("footer");
+            footer.style.backgroundImage = "linear-gradient(175deg, rgb(14, 90, 146) 0%, rgb(9, 68, 113) 100%)"
+            footer.style.display = "flex";
+            footer.style.justifyContent = "center";
+            footer.style.alignItems = "center";
+            footer.style.borderTop = "7px solid rgb(142, 152, 173)";
+            
+            footer.style.color = "white";
+            var footerText = document.createElement("p");
+            footerText.style.fontSize = "50px"
+            footerText.style.textShadow = '2px 4px 0 black'
+            footerText.style.fontFamily = "AlegreyaSC-Bold, serif";
+            footerText.innerHTML = "Dungeons &amp Dragons";
+            footer.appendChild(footerText);
+            document.body.appendChild(footer);
+        }
+        dNd();
+    </script>
+</html>

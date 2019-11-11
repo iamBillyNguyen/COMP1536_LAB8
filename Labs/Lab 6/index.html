@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 7</title>
+        <meta charset="utf-8">
+
+    </head>
+    <body>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Header
+                var header = $("<header>");
+                var ul = $("<ul>");
+                ul.addClass("mainNav");
+                var li1 = $("<li>").append("<p>Logo</>");
+                var li2 = $("<li>").append("<p>Top Gyms</p>");
+                var li3 = $("<li>").append("<p>Three Dots</p>");
+                ul.append(li1, li2, li3);
+                header.append(ul);
+                
+
+                //body
+                var main = $('<main>');
+                var section = $('<nav>');
+                var content = $("<div>");
+                
+                var ul2 = $('<ul>').addClass("bodyNav");
+                var li4 = $('<li>').append("<p>Facilities</p>");
+                var li5 = $('<li>').append("<p>Reviews</p>");
+
+                var reviews = $('<div>').addClass("reviews");
+                var content1 = $('<div>')
+                var content2 = $('<div>')
+                
+
+        
+
+
+
+                ul2.append(li4, li5);
+                main.append(section.append(ul2), reviews.append(content1, content2));
+                $("body").append(header, main);
+            });
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(217, 218, 220);
+        }
+
+        .head h1 {
+                text-align: center;
+        }
+
+        body {
+            background: rgb(241, 241, 241);
+            font-family: 'Oswald', sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: rgb(90, 94, 97);
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        .head {
+            width: 100%;
+            margin-bottom: 4.5vh;
+        }
+
+        .head h1 {
+            color: rgb(165, 165, 165);
+        }
+        .head h1 span {
+            color: rgb(217, 218, 220);
+        }
+        
+        .content {
+            width: 100%;
+            margin-bottom: 8vh;
+            
+        }
+
+        .content h2 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 1vh;
+            font-size: 5vw;
+        }
+
+        .content p {
+            text-align: center;
+            margin-bottom: 8vh;
+            font-size: 6vw;
+        }
+
+        #logo {
+            border-radius: 50%;
+        }
+
+        .bottomWrap {
+            width: 100%;
+            border-radius: 0%;
+        }
+
+        .bottomWrap h2 {
+            margin-bottom: 6vh;
+            color: rgb(217, 218, 220);
+            font-size: 2vw;
+        }
+
+        .sideBarWrap h2 {
+            margin-bottom: 6vh;
+            color: rgb(217, 218, 220);
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        .gallery li {
+            margin: 5px;
+        }
+
+        .gallery li img {
+            border-radius: 0%;
+        }
+
+
+
+        @media (min-width: 0px) and (max-width: 400px) {
+
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                padding: 0 1vw;
+                margin-bottom: 2vh;
+            }
+
+            .bottomWrap h1 {
+                text-align: center;
+            }
+
+            .sidebar {
+                display: none;
+            }
+
+            .imgBar  {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                max-height: 20vh;
+            }
+
+            .imgBar li {
+                flex-direction: column;
+                flex: 0 0 auto;
+                width: 50%;
+                align-self: center;
+                text-align: center;
+            }
+
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .imgWrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            .imgWrapper:before,
+            .imgWrapper:after {
+                flex: 1;
+                content: '';
+                height: 5vh;
+                background: rgb(255, 255, 255);
+            }
+
+            #specialLogo {
+                display: none;
+            }
+            
+        }
+        @media (min-width: 401px) and (max-width: 800px) {
+                .wrap {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                nav {
+                    margin-top: 5vh;
+                    margin-bottom: 5vh;
+                }
+
+                .content {
+                    margin: 100px 0;
+                }
+               
+                .navbar{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    background: rgb(255, 255, 255);
+                    height: 4vh;
+
+                }
+
+                .imgBar  {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-direction: row; 
+                    padding: 0 5vw;
+
+                }
+
+                .imgBar li {
+                    flex-direction: column;
+                    flex: 0 0 auto;
+                    width: 50%;
+                    align-self: center;
+                    text-align: center;
+                }
+
+                .gallery  {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                }
+
+                
+                .gallery li {
+                    flex-direction: column;
+                    flex: 0 45%;
+                    margin: 5px;
+                    align-self: center;
+                    text-align: center;
+                }
+
+                .bottomWrap {
+                    text-align: center;
+                }
+
+
+                .head {
+                    margin-bottom: 5vh;
+                }
+
+                .imgWrapper {
+                    display: none;
+                }
+
+                .imgWrapper img {
+                    display: none;
+                }
+
+                .sidebar {
+                    display: none;
+                }
+                
+                #specialLogo {
+                    position: absolute;
+                    max-width: 100%;
+                    max-height: auto;
+                }
+
+                .item {
+                    max-width: 50%;
+                    box-sizing: border-box;
+                }
+
+        }
+        @media (min-width: 801px) {
+
+                .wrap {
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+                .head {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: rgb(255, 255, 255);
+
+                }
+
+                .head h1 {
+                    order: 1;
+                    margin-left: 2vw;
+                }
+
+
+                nav {
+                    margin-top: 5vh;
+                    margin-bottom: 3vh;
+                }
+
+
+                .navbar li {
+                    display: inline;
+                    margin-right: 1vw;
+
+                }
+               
+                .head nav{
+                    order: 2;
+                    align-self: flex-end;
+                    margin-left: auto;
+                }
+
+                .imgWrapper {
+                    order: 0;
+                }
+
+                .imgBar  {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-direction: row; 
+                    padding: 0 5vw;
+
+                }
+
+
+
+                .gallery  {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    max-height: 100vh;
+                }
+
+                
+                .gallery li {
+                    flex-direction: column;
+                    flex: 0 45%;
+                    padding: 0 10px;
+                    margin: 5px;
+                    align-self: center;
+                    text-align: center;
+                }
+
+                .bottomWrap {
+                    text-align: center;
+                }
+
+
+                .head {
+                    margin-bottom: 5vh;
+                }
+
+                .head h1 {
+                    font-size: 2.5vw;
+                }
+
+
+                .bottomImg{
+                    float: left;
+                    width: 60%;
+                    overflow: hidden;
+                }
+
+                .sidebar {
+                    float: left;
+                    width: 40%;
+                    overflow: hidden;
+                }
+                
+                #specialLogo {
+                    display: none;
+                }
+
+                .item {
+                    max-width: 50%;
+                    box-sizing: border-box;
+                }
+        }
+
+
+        </style>
+    </head>
+    <body>
+        <main class="wrap">
+            <header class="head">
+                <div class="imgWrapper">
+                    <img id="logo" src="https://www.dummyimage.com/80x80/000/fff" alt="logo">
+                </div>
+                <nav>
+                    <ul class="navbar">
+                        <li class="item"><a href="#">Home</a></li>
+                        <li class="item"><a href="#">About</a></li>
+                        <li id="specialLogo"><a href="#"><img src="https://www.dummyimage.com/80x80/000/fff" alt="Logo"></a></li>
+                        <li class="item"><a href="#">Contact</a></li>
+                        <li class="item"><a href="#">Goals</a></li>
+                    </ul>
+                </nav>
+                <h1>Takahashi <span>Design</span></h1>
+            </header>
+            <section class="content">
+                <h2>Visual Design & Web Developement</h2>
+                <p>From Park City, Utah</p>
+                <ul class="imgBar">
+                    <li class="item"><a href="#"><img src="https://www.dummyimage.com/100x100/000/fff" alt="#"></a></li>
+                    <li class="item"><a href="#"><img src="https://www.dummyimage.com/100x100/000/fff" alt="#"></a></li>
+                    <li class="item"><a href="#"><img src="https://www.dummyimage.com/100x100/000/fff" alt="#"></a></li>
+                    <li class="item"><a href="#"><img src="https://www.dummyimage.com/100x100/000/fff" alt="#"></a></li>
+                </ul>
+            </section>
+            <section class="bottomImg">
+                <div class="bottomWrap">
+                    <h2>Gallery</h2>
+                    <ul class="gallery">
+                        <li class="item"><a href="#"><img src="https://www.dummyimage.com/300x150/000/fff" alt="#"></a></li>
+                        <li class="item"><a href="#"><img src="https://www.dummyimage.com/300x150/000/fff" alt="#"></a></li>
+                        <li class="item"><a href="#"><img src="https://www.dummyimage.com/300x150/000/fff" alt="#"></a></li>
+                        <li class="item"><a href="#"><img src="https://www.dummyimage.com/300x150/000/fff" alt="#"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <aside class="sidebar">
+                <div class="sideBarWrap">
+                    <h2>Aside</h2>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque sit amet porttitor eget dolor morbi non. Et tortor at risus viverra adipiscing at in tellus integer.</li>
+                        <li>Et tortor at risus viverra adipiscing at in tellus integer. Felis eget velit aliquet sagittis id consectetur purus ut faucibus.</li>
+                        <li>Tortor aliquam nulla facilisi cras. Egestas sed sed risus pretium quam vulputate. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi.</li>
+                        <li>Morbi tristique senectus et netus et malesuada fames ac. Quisque egestas diam in arcu cursus euismod quis viverra. Quis vel eros donec ac odio tempor orci dapibus ultrices. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.</li>
+                        <li>Sit amet risus nullam eget felis eget. Sit amet commodo nulla facilisi nullam vehicula. Morbi tristique senectus et netus et malesuada fames. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Semper risus in hendrerit gravida rutrum quisque non tellus. Integer quis auctor elit sed vulputate mi sit amet. Ut placerat orci nulla pellentesque dignissim enim sit amet.</li>
+                    </ol>
+                </div>
+            </aside>
+        </main>
+    </body>
+</html>
