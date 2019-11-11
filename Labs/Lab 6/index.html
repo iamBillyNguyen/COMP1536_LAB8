@@ -46,15 +46,41 @@
                 ul2.append(li4, li5);
 
                 var reviews = $('<div>');
+
                 var content1 = $('<div>');
+                var img1 = $("<img>");
+                var ul3 = $("<ul>");
+                ul3.css({"list-style": "none", "display": "flex"});
+                var li6 = $("<li>").append(img1);
+                var li7 = $("<li>Mary Brown<li>");
+                var li8 = $("<li>Yesterday</li>");
+                li8.css({"margin-left": "auto"});
+                ul3.append(li6, li7, li8);
+                img1.attr('src', 'pic1.jpg');
+                img1.css({"width": "50px", "border-radius": "50%"});
                 content1.append("<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>");
                 content1.append("<p>Questions about whether design is\nnecessary or affordable are quite besides\nthis point: design is inevitable.");
-                content1.append("<img src=\"img_avatar.png\" alt=\"Avatar\">");
+                content1.append(ul3);
+
+                
+                // ("#profile1").css({"width": "50px"});
 
                 
                 var content2 = $('<div>');
+                var img2 = $("<img>");
+                var ul4 = $("<ul>");
+                ul4.css({"list-style": "none", "display": "flex"});
+                var li9 = $("<li>").append(img2);
+                var li10 = $("<li>Jack Black<li>");
+                var li11 = $("<li>3 days ago</li>");
+                li11.css({"margin-left": "auto"});
+                ul4.append(li9, li10, li11);
+                img2.attr('src', 'pic2.jpg');
+                img2.css({"width": "50px", "border-radius": "50%"})
                 content2.append("<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>");
                 content2.append("<p>Design is the application of intent - the opposite of happenstance and an antidote to accident.");
+                content2.append(ul4);
+
                 reviews.append(content1, content2);
 
 
