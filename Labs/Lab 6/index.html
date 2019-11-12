@@ -94,7 +94,7 @@
                 content1.css({"border": "1px solid #DCDCDC", "padding": "20px", "box-shadow": "2px 3px 3px #A9A9A9"});
                 var img1 = $("<img>");
                 var ul3 = $("<ul>");
-                ul3.css({"padding": "0", "list-style": "none", "display": "flex", "justify-content": "space-around", "align-items": "center"});
+                ul3.css({"padding": "0", "list-style": "none", "display": "flex", "justify-content": "space-around", "align-items": "flex-start"});
                 var li6 = $("<li>").append(img1);
                 li6.css({"margin-right": "25px"})
                 var li7 = $("<li>Mary Brown<li>");
@@ -103,9 +103,11 @@
                 li8.css({"margin-left": "auto", "color": "#C0C0C0"});
                 ul3.append(li6, li7, li8);
                 img1.attr('src', 'pic2.jpg');
-                img1.css({"width": "auto", "height": "85px", "border-radius": "50%"});
-                content1.append("<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>");
-                content1.append("<p>\"Questions about whether design is\nnecessary or affordable are quite besides\nthis point: design is inevitable.\"").css({"font-weight": "700"});;
+                img1.css({"width": "100px", "height": "85px", "border-radius": "50%"});
+                var span1 = $("<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>");
+                span1.css({"color": "red"})
+                content1.append(span1);
+                content1.append("<p>\"Questions about whether design is\nnecessary or affordable are quite besides\nthis point: design is inevitable.\"").css({"font-weight": "700", "font-size": "5vw", "padding": "50px"});;
                 content1.append(ul3);
 
                 
@@ -116,7 +118,7 @@
                 content2.css({"border": "1px solid #DCDCDC", "padding": "20px", "box-shadow": "2px 3px 3px #A9A9A9"})
                 var img2 = $("<img>");
                 var ul4 = $("<ul>");
-                ul4.css({"padding": "0", "list-style": "none", "display": "flex", "justify-content": "space-around", "align-items": "center"});
+                ul4.css({"padding": "0", "list-style": "none", "display": "flex", "justify-content": "space-around", "align-items": "flex-start"});
                 var li9 = $("<li>").append(img2);
                 li9.css({"margin-right": "25px"})
                 var li10 = $("<li>Jack Black<li>");
@@ -126,9 +128,12 @@
                 li11.css({"margin-left": "auto"});
                 ul4.append(li9, li10, li11);
                 img2.attr('src', 'pic3.jpg');
-                img2.css({"width": "auto", "height": "85px", "border-radius": "50%"});
-                content2.append("<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>");
-                content2.append("<p>\"Design is the application of intent - the opposite of happenstance and an antidote to accident.\"").css({"font-weight": "700"});
+                img2.css({"width": "100px", "height": "85px", "border-radius": "50%"});
+                var span2 = $("<span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>");
+                span2.css({"color": "red"})
+                content2.append(span2);
+
+                content2.append("<p>\"Design is the application of intent - the opposite of happenstance and an antidote to accident.\"").css({"font-weight": "700", "font-size": "5vw", "padding": "50px"});
                 content2.append(ul4);
 
                 reviews.append(content1, content2);
