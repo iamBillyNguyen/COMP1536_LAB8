@@ -1,5 +1,4 @@
 
-INSERT INTO customer (first_name, last_name, email_address) VALUES ('Andrew', 'Takahashi', 'ataka1@fakeemail.com');
 INSERT INTO customer (first_name, last_name, email_address) VALUES ('Billy', 'Nguyen', 'iambillynguyen@fakeemail.com');
 INSERT INTO customer (first_name, last_name, email_address) VALUES ('Andy', 'Takahashi', 'coffe_addict@fakeemail.com');
 INSERT INTO customer (first_name, last_name, email_address) VALUES ('Finn', 'Human', 'mighty_finn@fakeemail.com');

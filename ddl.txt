@@ -3,11 +3,11 @@
 
 -- CREATE a TABLE (e.g., customer)
 CREATE TABLE customer (
-  customer_ID int NOT NULL AUTO_INCREMENT,
+  ID int NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email_address VARCHAR(50),
-  PRIMARY KEY (customer_ID)
+  PRIMARY KEY (ID)
 );
 
 CREATE TABLE address (
@@ -16,8 +16,7 @@ CREATE TABLE address (
   street_name VARCHAR(50),
   province VARCHAR(50),
   postal_code VARCHAR(50),
-  PRIMARY KEY (ID),
-  FOREIGN KEY (customer_ID) REFERENCES customer(customer_ID)
+  PRIMARY KEY (ID)
 );
 
 
