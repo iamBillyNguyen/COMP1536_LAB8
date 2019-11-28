@@ -1,0 +1,20 @@
+
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('ataka1', 'Andrew', 'Takahashi', 'ataka1@');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('iambillynguyen', 'Billy', 'Nguyen', 'iambillynguyen');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('coffe_addict', 'Andy', 'Takahashi', 'coffe_addict');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('mighty_finn', 'Finn', 'Human', 'mighty_finn');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('jake_the_dad', 'Jake', 'Dog', 'jake_the_dad');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('ja_hyuni', 'Jay', 'Jo', 'ja_hyuni');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('hannam_x_jordan', 'Dom', 'Kang', 'hannam_x_jordan');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('shelly_____x', 'Shelly', 'Johnson', 'shelly_____x');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('minu.yoon', 'Minu', 'Yoon', 'minu.yoon');
+INSERT INTO user (ID, first_name, last_name, password) VALUES ('mia_kim', 'Mia', 'Kim', 'mia_kim');
+
+
+INSERT INTO item (SKU, cart_id, item_price, quantity, description) VALUES ('sk-2843y', 1, 14.99, 1, 'toaster');
+INSERT INTO item (SKU, cart_id, item_price, quantity, description) VALUES ('sk-327623z', 2, 3.99, 2, 'napkins');
+INSERT INTO item (SKU, cart_id, item_price, quantity, description) VALUES ('sk-438s3x', 2, 1.99, 5, 'coffee cups');
+
+INSERT INTO product (SKU, item_price, description) VALUES ('sk-2843y', 14.99, 'toaster');
+INSERT INTO product (SKU, item_price, description) VALUES ('sk-327623z', 3.99, 'napkins');
+INSERT INTO product (SKU, item_price, description) VALUES ('sk-438s3x', 1.99, 'coffee cups');
