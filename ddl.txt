@@ -3,10 +3,11 @@
 
 -- CREATE a TABLE (e.g., customer)
 CREATE TABLE customer (
-  PRIMARY KEY (ID),
+  ID int NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(50),
   last_name VARCHAR(50),
-  email_address VARCHAR(50)
+  email_address VARCHAR(50),
+  PRIMARY KEY (ID)
 );
 
 CREATE TABLE address (
