@@ -1,14 +1,14 @@
 
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('ataka1', 'Andrew', 'Takahashi', 'ataka1@');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('iambillynguyen', 'Billy', 'Nguyen', 'iambillynguyen');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('coffe_addict', 'Andy', 'Takahashi', 'coffe_addict');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('mighty_finn', 'Finn', 'Human', 'mighty_finn');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('jake_the_dad', 'Jake', 'Dog', 'jake_the_dad');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('ja_hyuni', 'Jay', 'Jo', 'ja_hyuni');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('hannam_x_jordan', 'Dom', 'Kang', 'hannam_x_jordan');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('shelly_____x', 'Shelly', 'Johnson', 'shelly_____x');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('minu.yoon', 'Minu', 'Yoon', 'minu.yoon');
-INSERT INTO user (ID, first_name, last_name, password) VALUES ('mia_kim', 'Mia', 'Kim', 'mia_kim');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('1', 'Andrew', 'Takahashi', 'ataka1@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('2', 'Billy', 'Nguyen', 'iambillynguyen@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('3', 'Andy', 'Takahashi', 'coffe_addict@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('4', 'Finn', 'Human', 'mighty_finn@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('5', 'Jake', 'Dog', 'jake_the_dad@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('6', 'Jay', 'Jo', 'ja_hyuni@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('7', 'Dom', 'Kang', 'hannam_x_jordan@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('8', 'Shelly', 'Johnson', 'shelly_____x@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('9', 'Minu', 'Yoon', 'minu.yoon@fakeemail.com');
+INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('10', 'Mia', 'Kim', 'mia_kim@fakeemail.com');
 
 
 INSERT INTO item (SKU, cart_id, item_price, quantity, description) VALUES ('sk-2843y', 1, 14.99, 1, 'toaster');
