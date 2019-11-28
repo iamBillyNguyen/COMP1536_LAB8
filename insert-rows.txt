@@ -1,20 +1,23 @@
 
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('1', 'Andrew', 'Takahashi', 'ataka1@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('2', 'Billy', 'Nguyen', 'iambillynguyen@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('3', 'Andy', 'Takahashi', 'coffe_addict@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('4', 'Finn', 'Human', 'mighty_finn@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('5', 'Jake', 'Dog', 'jake_the_dad@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('6', 'Jay', 'Jo', 'ja_hyuni@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('7', 'Dom', 'Kang', 'hannam_x_jordan@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('8', 'Shelly', 'Johnson', 'shelly_____x@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('9', 'Minu', 'Yoon', 'minu.yoon@fakeemail.com');
-INSERT INTO user (ID, first_name, last_name, email_address) VALUES ('10', 'Mia', 'Kim', 'mia_kim@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Andrew', 'Takahashi', 'ataka1@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Billy', 'Nguyen', 'iambillynguyen@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Andy', 'Takahashi', 'coffe_addict@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Finn', 'Human', 'mighty_finn@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Jake', 'Dog', 'jake_the_dad@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Jay', 'Jo', 'ja_hyuni@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Dom', 'Kang', 'hannam_x_jordan@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Shelly', 'Johnson', 'shelly_____x@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Minu', 'Yoon', 'minu.yoon@fakeemail.com');
+INSERT INTO user (first_name, last_name, email_address) VALUES ('Mia', 'Kim', 'mia_kim@fakeemail.com');
 
 
-INSERT INTO item (SKU, cart_id, item_price, quantity, description) VALUES ('sk-2843y', 1, 14.99, 1, 'toaster');
-INSERT INTO item (SKU, cart_id, item_price, quantity, description) VALUES ('sk-327623z', 2, 3.99, 2, 'napkins');
-INSERT INTO item (SKU, cart_id, item_price, quantity, description) VALUES ('sk-438s3x', 2, 1.99, 5, 'coffee cups');
-
-INSERT INTO product (SKU, item_price, description) VALUES ('sk-2843y', 14.99, 'toaster');
-INSERT INTO product (SKU, item_price, description) VALUES ('sk-327623z', 3.99, 'napkins');
-INSERT INTO product (SKU, item_price, description) VALUES ('sk-438s3x', 1.99, 'coffee cups');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (1234, 'Happy St', 'BC', 'V1V2K3);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (5678, 'Sad St', 'BC', 'V4V5K6);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (1896, 'Magic St', 'BC', 'V7V8K9);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (123, 'This St', 'BC', 'V5V4K2);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (2434, 'That St', 'BC', 'V9V8K7);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (999, 'Other St', 'BC', 'V1V1K3);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (777, 'These St', 'BC', 'V5V6K3);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (88, 'Those St', 'BC', 'V8V6K2);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (5555, 'Your St', 'BC', 'V6V6K4);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (124, 'My St', 'BC', 'V5V5K5);
