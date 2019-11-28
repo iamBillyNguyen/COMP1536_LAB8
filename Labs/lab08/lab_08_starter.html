@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>COMP 1536 - Lab 8 Starter</title>
+    <meta charset="utf-8"/>
+    <style>
+      #getJSON, #getHTML {
+        background-color: #fabc89;
+        width: 50%;
+        margin: .5em;
+        padding: 1em;
+      }
+      #p1 {
+        font-size: 14pt;
+        height: 18pt;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p id='p1'></p>
+    </div>
+    <div id="getJSON">
+      <a href='#'>Click here to get the data as JSON.</a>
+    </div>
+    <div id="getHTML">
+      <a href='#'>Click here to get the data as HTML.</a>
+    </div>
+    <div id="jsonTable"></div>
+
+    <div id="htmlTable"></div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    /*<![CDATA[*/
+        $(document).ready(function() {
+
+            $('#getJSON a').click(function(e) {
+                // don't allow the anchor to visit the link
+                e.preventDefault();
+                console.log('clicked for JSON');
+
+                $.ajax({
+                    url: "lab_08_GetTable.php",
+                    dataType: "json",
+                    type: "GET",
+                    data: {output: 'json'},
+                    success: function(data) {
+
+                        console.log(data);
+                        // YOUR CODE GOES HERE
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        $("#p1").text(textStatus + " " + errorThrown
+                            + jqXHR.responseText);
+                    }
+                });
+            });
+
+            $('#getHTML a').click(function(e) {
+                // don't allow the anchor to visit the link
+                e.preventDefault();
+                console.log('clicked for HTML');
+
+                $.ajax({
+                    url: "lab_08_GetTable.php",
+                    dataType: "html",
+                    type: "GET",
+                    data: {output: 'html'},
+                    success: function(data) {
+                        console.log(data);
+                        // YOUR CODE GOES HERE
+
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        $("#p1").text(textStatus + " " + errorThrown);
+                    }
+                });
+            });
+        });
+    /*]]>*/
+    </script>
+
+  </body>
+</html>
