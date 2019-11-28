@@ -3,20 +3,21 @@
 
 -- CREATE a TABLE (e.g., customer)
 CREATE TABLE customer (
-  ID int NOT NULL AUTO_INCREMENT,
+  customer_ID int NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email_address VARCHAR(50),
-  PRIMARY KEY (ID)
+  PRIMARY KEY (customer_ID)
 );
 
 CREATE TABLE address (
   ID int NOT NULL AUTO_INCREMENT,
-  postal_code VARCHAR(50),
+  number INT NOT NULL,
   street_name VARCHAR(50),
-  number VARCHAR(50),
   province VARCHAR(50),
+  postal_code VARCHAR(50),
   PRIMARY KEY (ID)
+  FOREIGN KEY (customer_ID) REFERENCES customer(customer_ID)
 );
 
 
