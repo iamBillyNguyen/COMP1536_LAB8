@@ -1,23 +1,23 @@
 
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Andrew', 'Takahashi', 'ataka1@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Billy', 'Nguyen', 'iambillynguyen@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Andy', 'Takahashi', 'coffe_addict@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Finn', 'Human', 'mighty_finn@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Jake', 'Dog', 'jake_the_dad@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Jay', 'Jo', 'ja_hyuni@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Dom', 'Kang', 'hannam_x_jordan@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Shelly', 'Johnson', 'shelly_____x@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Minu', 'Yoon', 'minu.yoon@fakeemail.com');
-INSERT INTO user (first_name, last_name, email_address) VALUES ('Mia', 'Kim', 'mia_kim@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Andrew', 'Takahashi', 'ataka1@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Billy', 'Nguyen', 'iambillynguyen@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Andy', 'Takahashi', 'coffe_addict@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Finn', 'Human', 'mighty_finn@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Jake', 'Dog', 'jake_the_dad@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Jay', 'Jo', 'ja_hyuni@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Dom', 'Kang', 'hannam_x_jordan@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Shelly', 'Johnson', 'shelly_____x@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Minu', 'Yoon', 'minu.yoon@fakeemail.com');
+INSERT INTO customer (first_name, last_name, email_address) VALUES ('Mia', 'Kim', 'mia_kim@fakeemail.com');
 
 
-INSERT INTO address (number, street_name, province, postal_code) VALUES (1234, 'Happy St', 'BC', 'V1V2K3);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (5678, 'Sad St', 'BC', 'V4V5K6);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (1896, 'Magic St', 'BC', 'V7V8K9);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (123, 'This St', 'BC', 'V5V4K2);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (2434, 'That St', 'BC', 'V9V8K7);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (999, 'Other St', 'BC', 'V1V1K3);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (777, 'These St', 'BC', 'V5V6K3);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (88, 'Those St', 'BC', 'V8V6K2);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (5555, 'Your St', 'BC', 'V6V6K4);
-INSERT INTO address (number, street_name, province, postal_code) VALUES (124, 'My St', 'BC', 'V5V5K5);
+INSERT INTO address (number, street_name, province, postal_code) VALUES (1234, 'Happy St', 'BC', 'V1V2K3');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (5678, 'Sad St', 'BC', 'V4V5K6');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (1896, 'Magic St', 'BC', 'V7V8K9');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (123, 'This St', 'BC', 'V5V4K2');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (2434, 'That St', 'BC', 'V9V8K7');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (999, 'Other St', 'BC', 'V1V1K3');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (777, 'These St', 'BC', 'V5V6K3');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (88, 'Those St', 'BC', 'V8V6K2');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (5555, 'Your St', 'BC', 'V6V6K4');
+INSERT INTO address (number, street_name, province, postal_code) VALUES (124, 'My St', 'BC', 'V5V5K5');
